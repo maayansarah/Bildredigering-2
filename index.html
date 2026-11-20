@@ -16,55 +16,86 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-  <title>Nostalgiska naturvyer</title>
+  <title>Hem | Nostalgiska naturvyer</title>
 </head>
 
 <body>
   <header>
-    <div class="header-section">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo.svg" alt="Nostalgiska naturvyer startsida">
-        </a>
-      </div>
-    </div>
     <nav>
       <ul>
         <li><a class="text-underline" href="index.html">Hem</a></li>
         <li><a href="bildredigering.html">Bildredigering</a></li>
+      </ul>
+      <div class="header-section">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Nostalgiska naturvyer startsida">
+          </a>
+        </div>
+      </div>
+      <ul>
         <li><a href="om-mig.html">Om mig</a></li>
+        <li><a href="presentation.html">Presentation</a></li>
       </ul>
     </nav>
-
-    <div class="hero-img">
-      <img src="images/header.png" alt="Vattenfall med regnbåge">
-    </div>
   </header>
 
   <main>
-    <section class="img-description-section">
-      <div class="img-description-container">
-        <div class="img-description-content">
-          <h1>Välkommen!</h1>
-          <p>
-            Följande bilder tillhör en uppgift om bildbehandling, där bilderna
-            har redigerats i syfte att vara enhetliga med varandra och
-            webbplatsen. Programvarorna som har använts i redigeringen av
-            bilderna är Lightroom Classic och Photoshop. Loggan har skapats
-            med hjälp av Canva.
-          </p>
-        </div>
+    <div class="hero-wrapper">
+      <div class="hero-img">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/header.avif" type="image/avif">
+          <source media="(min-width: 1024px)" srcset="images/header.png">
+
+          <source media="(min-width: 768px)" srcset="images/header-mid.avif" type="image/avif">
+          <source media="(min-width: 768px)" srcset="images/header-mid.png">
+
+          <source srcset="images/header-small.avif" type="image/avif">
+
+
+          <img src="images/header.png" alt="Vattenfall med regnbåge">
+        </picture>
       </div>
-    </section>
+
+      <section class="img-description-section">
+        <div class="img-description-container">
+          <div class="img-description-content">
+            <h1>Välkommen!</h1>
+            <p>
+              Följande bilder tillhör en uppgift om bildbehandling, där bilderna
+              har redigerats i syfte att vara enhetliga med varandra och
+              webbplatsen. Programvarorna som har använts i redigeringen av
+              bilderna är Lightroom Classic och Photoshop. Loggan har skapats
+              med hjälp av Canva.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <div class="bildserie-section">
       <div class="bildserie-container">
         <div class="bildserie-content">
-          <img src="images/bildserie005.jpg" alt="Utsikt över havet i solnedgång">
-          <img src="images/bildserie004.jpg" alt="Person gör yogapose stående i vatten">
-          <img src="images/bildserie002.jpg" alt="Landskap med berg">
-          <img src="images/bildserie003.jpg" alt="Tjur i öppet landskap">
-          <img src="images/bildserie001.jpg" alt="Rosa blommor i bergen">
+          <picture>
+            <source srcset="images/bildserie005.avif" type="image/avif">
+            <img src="images/bildserie005.jpg" alt="Utsikt över havet i solnedgång" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/bildserie004.avif" type="image/avif">
+            <img src="images/bildserie004.jpg" alt="Person gör yogapose stående i vatten" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/bildserie002.avif" type="image/avif">
+            <img src="images/bildserie002.jpg" alt="Landskap med berg" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/bildserie003.avif" type="image/avif">
+            <img src="images/bildserie003.jpg" alt="Tjur i öppet landskap" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/bildserie001.avif" type="image/avif">
+            <img src="images/bildserie001.jpg" alt="Rosa blommor i bergen" loading="lazy">
+          </picture>
         </div>
       </div>
     </div>
