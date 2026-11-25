@@ -44,15 +44,20 @@
     <div class="hero-wrapper">
       <div class="hero-img">
         <picture>
-          <source media="(min-width: 1024px)" srcset="images/header.avif" type="image/avif">
-          <source media="(min-width: 1024px)" srcset="images/header.png">
+          <source media="(min-width: 1024px)" type="image/avif"
+            srcset="images/header-big-1x.avif 1x, images/header-big-2x.avif 2x" width="1920" height="800">
+          <source media="(min-width: 1024px)" type="image/jpg" srcset="images/header-big.jpg" width="1920" height="800">
 
-          <source media="(min-width: 768px)" srcset="images/header-mid.avif" type="image/avif">
-          <source media="(min-width: 768px)" srcset="images/header-mid.png">
+          <source media="(min-width: 768px)" type="image/avif"
+            srcset="images/header-mid-1x.avif 1x, images/header-mid-2x.avif 2x" width="1024" height="600">
+          <source media="(min-width: 768px)" type="image/jpeg" srcset="images/header-mid.jpg" width="1024" height="600">
 
-          <source srcset="images/header-small.avif" type="image/avif">
+          <source type="image/avif" srcset="images/header-small-1x.avif 1x, images/header-small-2x.avif 2x" width="768"
+            height="768">
 
-          <img src="images/header.png" alt="Vattenfall med regnbåge">
+
+          <img src="images/header-small.jpg" alt="Vattenfall med regnbåge" width="768" height="768"
+            fetchpriority="high">
         </picture>
       </div>
 
