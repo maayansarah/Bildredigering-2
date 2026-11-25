@@ -520,6 +520,7 @@ footer {
     display: flex;
     flex-direction: column;
     min-height: auto;
+    height: 50vh;
   }
 
   .hero-img {
