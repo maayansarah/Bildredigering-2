@@ -504,9 +504,13 @@ footer {
     justify-content: space-between;
     gap: 1.5rem;
 
-    & img {
+    & picture {
       flex: 1;
-      max-width: 100%;
+      width: 50%;
+    }
+
+    & .about-text {
+      flex: 1;
     }
   }
 }
