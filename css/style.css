@@ -519,21 +519,23 @@ footer {
   .hero-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: auto;
-    height: 50vh;
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero-wrapper picture {
+    width: 100%;
   }
 
   .hero-img {
-    height: 440px;
+    height: 0px;
     min-height: 0;
-    opacity: 40%;
   }
 
   .img-description-section {
     position: static;
     transform: none;
     width: 100%;
-    padding: 1rem 0;
   }
 
   .img-description-container {
